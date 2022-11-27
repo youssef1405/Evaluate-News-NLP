@@ -7,8 +7,8 @@ const app = express();
 app.use(express.static('dist'));
 
 app.get('/', (req, res) => {
-  // res.sendFile('dist/index.html')
-  res.sendFile(path.resolve('src/client/views/index.html'));
+  res.sendFile('dist/index.html');
+  // res.sendFile(path.resolve('src/client/views/index.html'));
 });
 
 app.get('/test', (req, res) => {
