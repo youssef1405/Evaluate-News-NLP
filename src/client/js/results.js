@@ -1,16 +1,20 @@
 // Global Variables
-const polarity = document.getElementById('polarity');
-const agreement = document.getElementById('agreement');
-const subjectivity = document.getElementById('subjectivity');
-const confidence = document.getElementById('confidence');
-const irony = document.getElementById('irony');
+const results = document.getElementById('results');
 
 const updateUI = (data) => {
-  polarity.textContent = `Polarity: ${data.score_tag}`;
-  agreement.textContent = `Agreement: ${data.agreement}`;
-  subjectivity.textContent = `Subjectivity: ${data.subjectivity}`;
-  confidence.textContent = `Confidence: ${data.confidence}`;
-  irony.textContent = `Irony: ${data.irony}`;
+  if (data) {
+    results.innerHTML = `
+    <div id="polarity">Polarity: ${data.score_tag}</div>
+    <div id="agreement">Agreement: ${data.agreement}</div>
+    <div id="subjectivity">Subjectivity: ${data.subjectivity}</div>
+    <div id="confidence">Confidence: ${data.confidence}</div>
+    <div id="irony">Irony: ${data.irony}</div>
+    `;
+  } else {
+    results.innerHTML = `
+        <div id="error">⛔ It seems like the URL you entered is invalid. Please check the URL and try again ⛔</div>
+    `;
+  }
 };
 
 export { updateUI };

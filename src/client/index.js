@@ -5,11 +5,9 @@ import './styles/form.scss';
 import './styles/header.scss';
 import './styles/results.scss';
 
-import { checkForName } from './js/nameChecker';
+import { checkUrl } from './js/urlChecker';
 import { handleSubmit } from './js/formHandler';
 import { updateUI } from './js/results';
 import { postData } from './js/sendDataToServer';
 
-console.log(checkForName);
-
-export { checkForName, handleSubmit, updateUI, postData };
+export { checkUrl, handleSubmit, updateUI, postData };
