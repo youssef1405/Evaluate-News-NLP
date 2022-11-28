@@ -7,17 +7,7 @@ async function handleSubmit(event) {
 
   console.log('::: Form Submitted :::');
 
-  postData('http://localhost:3000/article', formText);
+  Client.postData('http://localhost:3000/article', formText);
 }
-
-const postData = async (url, formUrl) => {
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ formUrl }),
-  })
-    .then((res) => res.json())
-    .then((data) => Client.updateUI(data));
-};
 
 export { handleSubmit };
