@@ -1,5 +1,18 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 0;
+}
+
+header .title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #5bc268;
+}
+
+header .sub-title {
+  font-size: 1.2rem;
+  color: #3e3eff;
 }

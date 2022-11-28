@@ -2,49 +2,57 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Test</title>
+    <title>Sentiment Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <div class="">Logo</div>
-      <div class="">navigation</div>
+      <div class="title">Sentiment Analyzer</div>
+      <div class="sub-title">
+        Enter a URL of an article to reveal its sentiment
+      </div>
     </header>
 
     <main>
       <section>
         <form class="" onsubmit="return Client.handleSubmit(event)">
+          <label for="name" class="url-label">URL</label>
           <input
-            id="name"
+            class="url-input"
             type="text"
             name="input"
             value=""
-            placeholder="Name"
+            placeholder="URL"
           />
           <input
             type="submit"
+            class="btn"
             name=""
-            value="submit"
+            value="Analyze"
             onclick="return Client.handleSubmit(event)"
             onsubmit="return Client.handleSubmit(event)"
           />
         </form>
       </section>
 
-      <section>
-        <strong>Form Results:</strong>
-        <div id="results">
-          <div id="polarity"></div>
-          <div id="agreement"></div>
-          <div id="subjectivity"></div>
-          <div id="confidence"></div>
-          <div id="irony"></div>
-        </div>
+      <section id="results">
+        <div class="results-title">Analysis Results:</div>
+        <div id="polarity"></div>
+        <div id="agreement"></div>
+        <div id="subjectivity"></div>
+        <div id="confidence"></div>
+        <div id="irony"></div>
       </section>
     </main>
 
     <footer>
-      <p>This is a footer</p>
+      <p>Youssef Girgeis © - 2022 Udacity Project</p>
     </footer>
   </body>
 </html>
