@@ -6,10 +6,8 @@ import './styles/header.scss';
 
 import { checkForName } from './js/nameChecker';
 import { handleSubmit } from './js/formHandler';
+import { updateUI } from './js/results';
 
 console.log(checkForName);
 
-// alert('I EXIST');
-console.log('CHANGE!!');
-
-export { checkForName, handleSubmit };
+export { checkForName, handleSubmit, updateUI };
