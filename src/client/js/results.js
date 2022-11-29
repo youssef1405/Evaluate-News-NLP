@@ -1,7 +1,5 @@
-// Global Variables
-const results = document.getElementById('results');
-
 const updateUI = (data) => {
+  const results = document.getElementById('results');
   if (data) {
     results.innerHTML = `
     <div id="polarity">Polarity: ${describePolarityScore(data.score_tag)}</div>
@@ -43,4 +41,4 @@ const describePolarityScore = (score) => {
   return polarity;
 };
 
-export { updateUI };
+export { updateUI, describePolarityScore };
