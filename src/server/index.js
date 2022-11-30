@@ -23,8 +23,7 @@ app.use(
 app.use(express.static('dist'));
 
 app.get('/', (req, res) => {
-  res.sendFile('dist/index.html');
-  // res.sendFile(path.resolve('src/client/views/index.html'));
+  res.sendFile(path.resolve('dist/index.html'));
 });
 
 app.get('/test', (req, res) => {
