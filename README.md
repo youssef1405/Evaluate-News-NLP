@@ -33,9 +33,13 @@ The goal of this project is to practice the following technolgies:
 In the text field, enter a valid url. If the URL is valid you should get results
 from the API such as the following:
 
+![image](https://user-images.githubusercontent.com/18706769/204687875-851119b8-651e-4080-93c0-fc963fc0eba7.png)
+
+
 ## Technolgies Used:
 
 - HTML5 and CSS3
+- Sass
 - JavaScript
 - Webpack
 - Node and Express
