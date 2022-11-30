@@ -1,4 +1,4 @@
-import { describePolarityScore } from '../src/client/js/results';
+import { describePolarityScore } from '../src/client/js/formHandler';
 
 describe('Testing describePolarityScore function', () => {
   test('Polarity describtion to equal Strong Positive', () => {
